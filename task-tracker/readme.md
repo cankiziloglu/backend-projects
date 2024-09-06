@@ -1,6 +1,7 @@
 # Task Tracker CLI App
+This is a command line interface (CLI) app to manage tasks.
 
-This CLI app is a sample solution to the [task-tracker](https://roadmap.sh/projects/task-tracker) backend project on [roadmap.sh](https://roadmap.sh)
+This app is a sample solution to the [task-tracker](https://roadmap.sh/projects/task-tracker) backend project on [roadmap.sh](https://roadmap.sh)
 
 ## Features
 - Add, Update, and Delete tasks with unique ID, status, date created and date updated properties
