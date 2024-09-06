@@ -11,8 +11,5 @@
   "bin": {
     "tasks": "./bin/index.js"
   },
-  "type": "module",
-  "dependencies": {
-    "commander": "^12.1.0"
-  }
+  "type": "module"
 }
