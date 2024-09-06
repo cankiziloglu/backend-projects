@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const args = process.argv.slice(2);
-const filePath = '../tasks.json';
+const filePath = './tasks.json';
 
 if (!fs.existsSync(filePath)) {
   fs.writeFileSync(filePath, JSON.stringify({ uid: 1, tasks: [] }));
@@ -86,7 +86,7 @@ if (args[0] === 'add') {
     console.log('Please provide a task description');
   } else {
     const id = addTask(args.slice(1).join(' '));
-    console.log('Task added successfully. Task ID: ', id);
+    console.log('Task added successfully. Task ID:', id);
   }
 } else if (args[0] === 'list') {
   // List tasks

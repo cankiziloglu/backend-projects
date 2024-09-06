@@ -1,5 +1,5 @@
 {
-  "name": "tasks-cli",
+  "name": "task-cli",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "license": "ISC",
   "description": "",
   "bin": {
-    "tasks-cli": "./bin/index.js"
+    "task-cli": "./bin/index.js"
   }
 }
