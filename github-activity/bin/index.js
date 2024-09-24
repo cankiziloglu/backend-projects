@@ -33,5 +33,3 @@ const activity = fetch(`https://api.github.com/users/${username}/events`)
   .catch((error) => {
     console.log('Error fetching data:', error);
   });
-
-
