@@ -28,8 +28,15 @@ const activity = fetch(`https://api.github.com/users/${username}/events`)
     });
   })
   .then((activity) => {
-    console.log(activity);
+    return activity.forEach(element => {
+      if (element.action) {
+        console.log(`${element.action} ${element.type} on ${element.repo} at ${element.created_at}`);
+      }
+      else {
+        console.log(`${element.type} on ${element.repo} at ${element.created_at}`);
+      }
+    });
   })
   .catch((error) => {
-    console.log('Error fetching data:', error);
+    console.log('Error fetching data');
   });
